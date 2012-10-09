@@ -1,0 +1,55 @@
+Map {
+  background-color: #b8dee6;
+}
+
+#countries {
+  ::outline {
+    line-color: #85c5d3;
+    line-width: 2;
+    line-join: round;
+  }
+  polygon-fill: #fff;
+}
+
+#mapadamina {
+  line-color:#999;
+  line-width:1;
+  polygon-opacity:1;  
+  polygon-fill:#eee;
+  
+  ['m_PARTIDO'='PMDB'] {
+    polygon-fill:#035000;
+    }
+  
+  ['m_PARTIDO'='PT'] {
+    polygon-fill:#c00000;
+    }
+  ['m_PARTIDO'='PSDB'] {
+    polygon-fill:#0822a2;
+    }  
+  ['m_PARTIDO'='PP'] {
+    polygon-fill:#6d2593;
+    }
+  
+  ['m_PARTIDO'='PSD'] {
+    polygon-fill:#FDB813;
+    }
+  
+  ['m_PARTIDO'='DEM'] {
+    polygon-fill:#fffa00;
+    }
+  ['m_PARTIDO'='PV'] {
+    polygon-fill:#64c400;
+    }
+  
+  ['m_PARTIDO'=''] {
+    line-width:0.1;
+    polygon-opacity: 0;
+    }
+}
+
+#mapadamina[zoom > 6] {
+  text-face-name: "Verdana Bold";
+  text-size: 9;
+  text-name: "[m_PARTIDO]";
+  }
