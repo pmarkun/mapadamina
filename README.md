@@ -2,6 +2,8 @@
 
 Criando uma visualização dos partidos campeões em doação de campanha por munícipio.
 
+[Veja o resultado aqui.](http://tiles.mapbox.com/markun/map/mapadamina_2)
+
 Ferramentas utilizadas:
 * [Dados do TSE](http://www.tse.jus.br/eleicoes/repositorio-de-dados-eleitorais)
 * csvkit
@@ -26,7 +28,7 @@ Veja que aqui não estou diferenciando entre candidatos eleitos e não eleitos, 
 
 Para baixar o script, você pode baixar o source todo do git ou simplesmente:
 
-    wget 
+    wget https://raw.github.com/pmarkun/mapadamina/master/script.py
 
 O arquivo esta configurado para ler o arquivo ReceitasCandidatos-clean.csv no próprio diretorio e gerar o csv ``partidoscampeoes.csv``.
 
@@ -57,4 +59,3 @@ Abra as propriedades do shape do brasil, vá em 'Uniões' e conecte o campo ``CO
 Agora é só mandar salvar como shape e abrir no TileMill e brincar!
 
 No arquivo mapadamina.css tem o estilo que estou usando para visualizar. Have fun!
-
